@@ -60,3 +60,60 @@
 // Set sections as active
 
 
+// navigation adding HTML
+
+function createShowcase() {
+    let ul = document.getElementById("navbar__list");
+    let li = document.createElement("li");
+    li.textContent = 'Showcase';
+    // ul.appendChild(document.createTextNode("Showcase"));
+    li.setAttribute("id", "element1"); // added line
+    ul.appendChild(li);
+};
+
+createShowcase();
+
+function createHowWeDoIt() {
+    let ul = document.getElementById("navbar__list");
+    let li = document.createElement("li");
+    li.textContent = 'How We Do It';
+    // ul.appendChild(document.createTextNode("Showcase"));
+    li.setAttribute("id", "element2"); // added line
+    ul.appendChild(li);
+};
+
+createHowWeDoIt();
+
+function createOurProject() {
+    let ul = document.getElementById("navbar__list");
+    let li = document.createElement("li");
+    li.textContent = 'Our Project';
+    // ul.appendChild(document.createTextNode("Showcase"));
+    li.setAttribute("id", "element3"); // added line
+    ul.appendChild(li);
+};
+
+createOurProject();
+
+function createTestimonials() {
+    let ul = document.getElementById("navbar__list");
+    let li = document.createElement("li");
+    li.textContent = 'Testimonials';
+    // ul.appendChild(document.createTextNode("Showcase"));
+    li.setAttribute("id", "element4"); // added line
+    ul.appendChild(li);
+};
+
+createTestimonials();
+
+function createSubscribe() {
+    let ul = document.getElementById("navbar__list");
+    let li = document.createElement("li");
+    li.textContent = 'Subscribe';
+    // ul.appendChild(document.createTextNode("Showcase"));
+    li.setAttribute("id", "element5"); // added line
+    ul.appendChild(li);
+};
+
+createSubscribe();
+
