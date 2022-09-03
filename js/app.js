@@ -65,75 +65,118 @@
 function createShowcase() {
     let ul = document.getElementById("navbar__list");
     let li = document.createElement("li");
-    li.textContent = 'Showcase';
-    // ul.appendChild(document.createTextNode("Showcase"));
-    li.setAttribute("id", "element1"); // added line
+    // li.textContent = 'Showcase';
+    li.setAttribute("id", "#element1"); 
     ul.appendChild(li);
 };
 
 createShowcase();
 
-
 function showLink() {
     let liShow = document.getElementById("#element1");
     let a= document.createElement("a");
     a.setAttribute('href', '#section1');
+    a.textContent = 'Showcase';
     liShow.appendChild(a);
 };
 
-
 showLink();
-
-
-
-
-
 
 
 
 function createHowWeDoIt() {
     let ul = document.getElementById("navbar__list");
     let li = document.createElement("li");
-    li.textContent = 'How We Do It';
-    // ul.appendChild(document.createTextNode("Showcase"));
-    li.setAttribute("id", "element2"); // added line
+    // li.textContent = 'How We Do It';
+    li.setAttribute("id", "#element2"); 
     ul.appendChild(li);
 };
 
 createHowWeDoIt();
 
+function howLink() {
+    let liHow = document.getElementById("#element2");
+    let a= document.createElement("a");
+    a.setAttribute('href', '#section2');
+    a.textContent = 'How We Do It';
+    liHow.appendChild(a);
+};
+
+howLink();
+
+
+
+
 function createOurProject() {
     let ul = document.getElementById("navbar__list");
     let li = document.createElement("li");
-    li.textContent = 'Our Project';
-    // ul.appendChild(document.createTextNode("Showcase"));
-    li.setAttribute("id", "element3"); // added line
+    // li.textContent = 'Our Project';
+    li.setAttribute("id", "#element3"); 
     ul.appendChild(li);
 };
 
 createOurProject();
 
+function projectLink() {
+    let liPro = document.getElementById("#element3");
+    let a= document.createElement("a");
+    a.setAttribute('href', '#section3');
+    a.textContent = 'Our Projects';
+    liPro.appendChild(a);
+};
+
+projectLink();
+
+
+
+
 function createTestimonials() {
     let ul = document.getElementById("navbar__list");
     let li = document.createElement("li");
-    li.textContent = 'Testimonials';
-    // ul.appendChild(document.createTextNode("Showcase"));
-    li.setAttribute("id", "element4"); // added line
+    // li.textContent = 'Testimonials';
+    li.setAttribute("id", "#element4"); 
     ul.appendChild(li);
 };
 
 createTestimonials();
 
+function testimonialsLink() {
+    let liTest = document.getElementById("#element4");
+    let a= document.createElement("a");
+    a.setAttribute('href', '#section4');
+    a.textContent = 'Testimonials';
+    liTest.appendChild(a);
+};
+
+testimonialsLink();
+
+
+
+
 function createSubscribe() {
     let ul = document.getElementById("navbar__list");
     let li = document.createElement("li");
-    li.textContent = 'Subscribe';
-    // ul.appendChild(document.createTextNode("Showcase"));
-    li.setAttribute("id", "element5"); // added line
+    // li.textContent = 'Subscribe';
+    li.setAttribute("id", "#element5");
     ul.appendChild(li);
 };
 
 createSubscribe();
+
+function subLink() {
+    let liSub = document.getElementById("#element5");
+    let a= document.createElement("a");
+    a.setAttribute('href', '#section5');
+    a.textContent = 'Subscribe';
+    liSub.appendChild(a);
+};
+
+subLink();
+
+
+
+
+
 
 // adding H2 elements
 
@@ -186,3 +229,27 @@ function testimonials() {
 
 testimonials();
 
+//events
+
+const section = querySelectorAll('section');
+const navLi = document.querySelectorAll('.navbar__menu ul li');
+
+window.addEventListener('scroll', ()=> {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop=section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if(pageYoffset >sectionTop) {
+            current = section.getAttribute('id');
+
+        }
+    })
+
+    navLi.forEach(li => {
+        li.classList.remove('active');
+        if(li.classList.contains(current)){
+        li.classList.add('active')
+        }
+    })
+})
