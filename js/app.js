@@ -73,6 +73,24 @@ function createShowcase() {
 
 createShowcase();
 
+
+function showLink() {
+    let liShow = document.getElementById("#element1");
+    let a= document.createElement("a");
+    a.setAttribute('href', '#section1');
+    liShow.appendChild(a);
+};
+
+
+showLink();
+
+
+
+
+
+
+
+
 function createHowWeDoIt() {
     let ul = document.getElementById("navbar__list");
     let li = document.createElement("li");
@@ -116,4 +134,55 @@ function createSubscribe() {
 };
 
 createSubscribe();
+
+// adding H2 elements
+
+function createTitle() {
+    let sectionTitle = document.querySelector("#section1");
+    let h2 = document.createElement("h2");
+    h2.textContent = 'Our Showcase';
+    h2.setAttribute('id', 'our_showcase')
+    sectionTitle.appendChild(h2);
+    sectionTitle.insertAdjacentElement("afterbegin", h2);
+    
+};
+
+createTitle();
+
+
+function howWeDoIt() {
+    let sectionTitle = document.querySelector("#section2");
+    let h2 = document.createElement("h2");
+    h2.textContent = 'How We Do It';
+    h2.setAttribute('id', 'how_we_do_it')
+    sectionTitle.appendChild(h2);
+    sectionTitle.insertAdjacentElement("afterbegin", h2);
+    
+};
+
+howWeDoIt();
+
+function ourProjects() {
+    let sectionTitle = document.querySelector("#section3");
+    let h2 = document.createElement("h2");
+    h2.textContent = 'Our Projects';
+    h2.setAttribute('id', 'our_projects')
+    sectionTitle.appendChild(h2);
+    sectionTitle.insertAdjacentElement("afterbegin", h2);
+    
+};
+
+ourProjects();
+
+function testimonials() {
+    let sectionTitle = document.querySelector("#section4");
+    let h2 = document.createElement("h2");
+    h2.textContent = 'Testimonials';
+    h2.setAttribute('id', 'testimonials')
+    sectionTitle.appendChild(h2);
+    sectionTitle.insertAdjacentElement("afterbegin", h2);
+    
+};
+
+testimonials();
 
