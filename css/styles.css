@@ -1,5 +1,10 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* main body */
 
 body {
     background-color: white;
@@ -10,6 +15,8 @@ body {
     margin-right: auto;
 }
 
+/* navigation */
+
 .navbar__menu {
     display: flex;
     justify-content: space-between;
@@ -19,6 +26,7 @@ body {
     position: sticky;
     top: 0;
     background-color: white;
+    height: 55px;
 }
 
 #logo {
@@ -41,6 +49,9 @@ padding-left: 50px;
 font-size: 15px;
 }
 
+
+/* main picture */
+
 .showcase {
 display: flex;;
 margin: auto auto; 
@@ -62,14 +73,83 @@ margin-top: 80px;
     border-top-right-radius: 10px;
 }
 
+h4 {
+    color: rgb(173, 68, 85);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-align: left;
+
+}
+
+.intro {
+   
+ font-size: 35px;
+ font-weight: 600;
+ line-height: 66px;
+ letter-spacing: -1px;
+ text-align: left;
+
+}
+
+/* sections */
+
+.gallery {
+    display: flex;
+    align-items: center;
+
+}
+
+.gallery > img {
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec2_container {
+    display: flex;
+    float: left;
+    
+}
+
+.paragraph {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    float: left;
+    padding:20px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.pinkbox {
+    background-color: rgb(217,193,197);
+    color: rgb(173, 68, 85);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 h2 {
     text-align: center;
+    padding-top: 60px;
 }
 
 section {
     margin-top: 80px;
     padding: 20px;
+    
 }
+
+
+/* form */
 
 form {
 
@@ -77,6 +157,7 @@ form {
     background-image: linear-gradient(rgb(217,193,197), pink, rgb(228, 228, 157));
     padding: 20px;
     border-radius: 10px;
+    border: solid 2px black;
     
 }
 
@@ -91,7 +172,9 @@ fieldset {
     
     font-size: 30px;
     text-align: center;
-    padding: 20px
+    padding: 20px;
+    letter-spacing: 3px;
+
 
 }
 
@@ -130,6 +213,9 @@ input:valid {
     padding: 5px;
     text-align: center;
 }
+
+
+/* links */
 
 a {
     color: black;

@@ -205,6 +205,7 @@ function howWeDoIt() {
 
 howWeDoIt();
 
+
 function ourProjects() {
     let sectionTitle = document.querySelector("#section3");
     let h2 = document.createElement("h2");
@@ -212,7 +213,6 @@ function ourProjects() {
     h2.setAttribute('id', 'our_projects')
     sectionTitle.appendChild(h2);
     sectionTitle.insertAdjacentElement("afterbegin", h2);
-    
 };
 
 ourProjects();
@@ -240,7 +240,7 @@ window.addEventListener('scroll', ()=> {
         const sectionTop=section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        if(pageYoffset >sectionTop) {
+        if(pageYOffset >sectionTop) {
             current = section.getAttribute('id');
 
         }
