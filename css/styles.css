@@ -233,3 +233,37 @@ a:hover {
     color: rgb(173, 68, 85);
     font-weight: 660;
 }
+
+/* floating button */
+
+.floating-button {
+    width: 80px;
+    height: 80px;
+    color: black;
+    font-weight: 1000;
+    border:none;
+    box-shadow: 10px 10px 20px black;
+    font-size: 30px;
+    background-color: rgb(173, 68, 85);
+    border-radius: 50%;
+    float: right;
+    margin: 20px;
+    -webkit-animation: bounce .3s infinite alternate;
+    -moz-animation: bounce .3s infinite alternate;
+    animation: bounce .3s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+    
+
+footer {
+    margin: 80px;
+}
