@@ -173,6 +173,20 @@ function subLink() {
 
 subLink();
 
+//event listener for anchor (link)
+
+document.querySelectorAll('.navbar__menu a').forEach ( a => {
+    a.addEventListener('click', event => {
+        event.preventDefault()
+        const id = a.getAttribute('href');
+        const section = document.querySelector(id)
+        section.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    })
+})
+
 
 
 
@@ -231,24 +245,37 @@ testimonials();
 
 //events
 
-const section = querySelectorAll('section');
+
+document.querySelector('form').addEventListener('submit', e =>{
+    e.preventDefault()
+    alert('The Form Has Been Submitted Successfully');
+})
+
+
+
+
+
+const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.navbar__menu ul li');
 
-window.addEventListener('scroll', ()=> {
+addEventListener('scroll', ()=> {
+
     let current = '';
     sections.forEach(section => {
         const sectionTop=section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        if(pageYOffset >sectionTop) {
-            current = section.getAttribute('id');
+        if(scrollY + 68 > sectionTop) {
+        current = section.getAttribute('id');
 
         }
     })
 
+    console.log(current)
+
     navLi.forEach(li => {
         li.classList.remove('active');
-        if(li.classList.contains(current)){
+        if(li.querySelector('a').getAttribute('href')=='#'+ current){
         li.classList.add('active')
         }
     })

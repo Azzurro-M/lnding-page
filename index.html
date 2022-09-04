@@ -16,16 +16,14 @@
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   
-  <header class="page__header">
+  <header class="page__header" id="page_header">
     
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       
-      
+      <div id="logo">PinkPink<span class='logo-dot'>.</span></div>
+
       <ul id="navbar__list">
-
-        <li id="logo">PinkPink<span class='logo-dot'>.</span></li>
-
         <!-- <li>Showcase</li> -->
         <!-- <li>How We Do It</li> -->
         <!-- <li>Our Projects</li> -->
@@ -115,15 +113,29 @@
     <section id="section4" data-nav="Section-4">
       
       <!-- <h2>Testimonials</h2> -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+      <div class="test_container">
 
-      <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-    
+      <div class="author_container">
+        
+        <img class='author' src="img/picture1.jpg" alt="author">
+        <figcaption>Anna - New York</figcaption>
+        
+      </div>
+
+      <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <br>
+        Morbi fermentum metus faucibus lectus pharetra dapibus."
+      </blockquote>
+
+      </div>
+
+      
+      
   </section>
 
  <section id="section5" data-nav="Section-5">
       
-  <form action="contact.html" method="post" enctype="application/x-www-form-urlencoded">
+  <form  method="post" enctype="application/x-www-form-urlencoded">
     <h3 class="subscribe">Subscribe Below</h3>
     <fieldset>
       <br>
@@ -146,7 +158,7 @@
 
   </main>
 
-  <button class="floating-button">&uarr;</button>
+  <button class="floating-button"><a href='#section1'>&uarr;</a></button>
 
   <footer class="page__footer">
     <p>&copy Udacity</p>

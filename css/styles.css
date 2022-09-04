@@ -19,7 +19,10 @@ body {
 
 .navbar__menu {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .page__header {
@@ -148,6 +151,35 @@ section {
     
 }
 
+p{
+    padding: 20px;
+}
+
+
+.author {
+    width: 60px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+blockquote {
+    margin-top: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    width: 400px;
+}
+
+.test_container {
+    display: flex;
+    align-items: center;    
+    flex-direction: column-reverse;
+    width: 1000px;
+    padding: 20px;
+}
+
+
+
+
 
 /* form */
 
@@ -199,11 +231,11 @@ input {
 }
 
 input:invalid {
-    border-color: rgb(172, 61, 61);
+    outline-color: rgb(172, 61, 61);
 }
 
 input:valid {
-    border-color: rgb(124, 212, 124);
+    outline-color: rgb(124, 212, 124);
 }
 
 .send_button {
@@ -229,8 +261,8 @@ a:hover {
     cursor: pointer;
 }
 
-.active {
-    color: rgb(173, 68, 85);
+.active a {
+    background-color: rgb(173, 68, 85);
     font-weight: 660;
 }
 
@@ -243,7 +275,7 @@ a:hover {
     font-weight: 1000;
     border:none;
     box-shadow: 10px 10px 20px black;
-    font-size: 30px;
+    font-size: 50px;
     background-color: rgb(173, 68, 85);
     border-radius: 50%;
     float: right;
@@ -251,6 +283,10 @@ a:hover {
     -webkit-animation: bounce .3s infinite alternate;
     -moz-animation: bounce .3s infinite alternate;
     animation: bounce .3s infinite alternate;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 @-webkit-keyframes bounce {
@@ -265,5 +301,5 @@ a:hover {
     
 
 footer {
-    margin: 80px;
+    margin-top: 100px;
 }
