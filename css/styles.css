@@ -9,6 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* main body */
 
 body {
@@ -21,6 +22,12 @@ body {
 }
 
 /* navigation */
+
+.page__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .navbar__menu {
     display: flex;
@@ -42,6 +49,7 @@ body {
   font-size: 25px;
   padding: 15px;
   padding-left: 0;
+ margin-left: 20px;
 }
 
 .logo-dot {
@@ -386,3 +394,140 @@ a:hover {
 footer {
     margin-top: 100px;
 }
+
+
+/* Media --> mobile version*/
+
+@media screen and (max-width: 600px) {
+
+    body{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .showcase {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .decor {
+         width: 70%;
+         place-items: center;
+         margin: 20px auto;
+         border-radius: 10px;
+    }
+
+    .decor-description {
+        width: 70%;
+        margin: 20px auto;
+        border-radius: 10px;
+        place-items: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        place-items: center;
+    }
+
+    p {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .container_list {
+        place-content: center;
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .box1, .box2, .box3 {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 170px;
+        justify-content: center;
+        margin-left: 15%;    }
+
+    .p-list {
+        visibility: hidden;
+    }
+
+    .learn {
+        visibility: hidden;
+    }
+
+    .title-list {
+        align-items: center;
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .test_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .floating-button {
+        visibility: hidden;
+    }
+
+
+    form {
+        width: 100%;
+        border-top: solid 1px rgb(173, 68, 85);
+
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px rgb(173, 68, 85);
+    }
+
+    #logo {
+        margin-left: 20%;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .bar1, .bar2, .bar3 {
+        height: 1px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 25px;
+        width: 35px;
+        padding: 2px;
+
+    }
+
+    #hamburger {
+        position: absolute;
+        right: 130px;
+        top: 15px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+
+     
+    }
+
+
+    @media screen and (min-width:600px) {
+
+        #hamburger {
+            visibility: hidden;
+        }
+        
+    }
+
+
+}
+    

@@ -280,3 +280,28 @@ addEventListener('scroll', ()=> {
         }
     })
 })
+
+// hamburger menu
+
+// function hamburger() {
+//     let nav = document.getElementsByTagName("nav");
+//     let hambMenu = document.querySelector('#hamburger')
+
+//     if (nav.style.display === "block") {
+//       nav.style.display = "none";
+//     } else {
+//       nav.style.display = "block";
+//     }
+
+//     hamburger.addEventListener('click', event => {
+//         hambMenu.showLink(nav);
+//     })
+//   }
+
+const hamburger =  document.getElementById('hamburger');
+const navItem =  document.getElementById('navbar__list');
+
+hamburger.addEventListener('click', () => {
+  navItem.classList.toggle('show');
+});
+
