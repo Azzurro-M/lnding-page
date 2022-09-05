@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -200,7 +201,6 @@ figcaption {
 .container_list {
     display: flex;
     flex-direction: column;
-    float: left;
     margin-right: auto;
     margin-left: auto;
 }
@@ -210,7 +210,7 @@ figcaption {
     display: flex;
     float: left;
     width: 900px;
-    height: 100px;
+    height: 130px;
     margin-bottom: 80px;
     padding: 20px;
     border-bottom: solid 1px rgb(173, 68, 85);
