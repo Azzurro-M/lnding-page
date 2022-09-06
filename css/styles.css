@@ -417,6 +417,15 @@ footer {
         flex-wrap: wrap;
     }
 
+    .intro {
+        place-items: center;
+        text-align: center;
+    }
+
+    .introh4 {
+        text-align: center;
+    }
+
     .decor {
          width: 70%;
          place-items: center;

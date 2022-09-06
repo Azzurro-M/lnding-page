@@ -243,15 +243,13 @@ function testimonials() {
 
 testimonials();
 
-//events
+//scroll and highlight nav events
 
 
 document.querySelector('form').addEventListener('submit', e =>{
     e.preventDefault()
     alert('The Form Has Been Submitted Successfully');
 })
-
-
 
 
 
@@ -281,43 +279,28 @@ addEventListener('scroll', ()=> {
     })
 })
 
-// hamburger menu
 
-// function hamburger() {
-//     let nav = document.getElementsByTagName("nav");
-//     let hambMenu = document.querySelector('#hamburger')
 
-//     if (nav.style.display === "block") {
-//       nav.style.display = "none";
-//     } else {
-//       nav.style.display = "block";
-//     }
-
-//     hamburger.addEventListener('click', event => {
-//         hambMenu.showLink(nav);
-//     })
-//   }
-// function hambMenu () {
-// const hamburger =  document.getElementById('hamburger');
-// const navItem =  document.querySelector('navbar__menu');
-
-// hamburger.addEventListener('click', () => {
-//   navItem.classList.toggle('show');
-// })
-// }
-
-// hambMenu ();
-// console.log(navItem)
 
 //mobile navigation
 
-// const mobileList = [
-//     {
-//     title: 'Showcase'
-//     hash: '#showcase'
-// }, 
-// {
-//     title: ''
-//     hash: '#showcase'
+// module.exports = MobileNav;
+
+// const hambIcon = document.querySelector('#hamburger');
+// const list = MobileNav[]
+// list.forEach(title) => {
+// const li = document.createElement('li');
+// li.textContent = list.title
+// const a = document.createElement('a');
+// li.appendChild('a');
+
+// hambIcon.onlick = () => {
+//     document.querySelector('list').classList.toggle(forced-visibility);
 // }
+ 
+// }
+
+
+
+
 
