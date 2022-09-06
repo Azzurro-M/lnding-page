@@ -297,11 +297,27 @@ addEventListener('scroll', ()=> {
 //         hambMenu.showLink(nav);
 //     })
 //   }
+// function hambMenu () {
+// const hamburger =  document.getElementById('hamburger');
+// const navItem =  document.querySelector('navbar__menu');
 
-const hamburger =  document.getElementById('hamburger');
-const navItem =  document.getElementById('navbar__list');
+// hamburger.addEventListener('click', () => {
+//   navItem.classList.toggle('show');
+// })
+// }
 
-hamburger.addEventListener('click', () => {
-  navItem.classList.toggle('show');
-});
+// hambMenu ();
+// console.log(navItem)
+
+//mobile navigation
+
+// const mobileList = [
+//     {
+//     title: 'Showcase'
+//     hash: '#showcase'
+// }, 
+// {
+//     title: ''
+//     hash: '#showcase'
+// }
 

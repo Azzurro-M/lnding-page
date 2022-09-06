@@ -1,13 +1,11 @@
 # Landing Page Project
 
-## Table of Contents
 
-* [Instructions](#instructions)
+# How I developped the website
+I have focused firstly in copying part of the website design from FIGMA, I have used the design key elements like colors, font, logo, but have adjusted the page in a way that helped me create css and JS on time for my project deadline.
 
-## Instructions
+I have started with a medium size screen and ajusted the media for mobiles.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+I have created nav list items, h2 elemnts and all important events like scroll and highlight and anchor tags to connect nav menu to page sections through JS.
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+It hasn't been easy for me so I know there is a better way to create functions but im still learning and that's what i managed to come up with by myself.
