@@ -1,227 +1,262 @@
 <!DOCTYPE >
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
-  <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
-  <link href="css/styles.css" rel="stylesheet">
-  
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
 
-</head>
-<body>
-  <!-- HTML Follows BEM naming conventions 
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
-  
-  <header class="page__header" id="page_header">
-    
-    <div id="logo">PinkPink<span class='logo-dot'>.</span></div>
-    
-    <nav class="navbar__menu">
-      <!-- Navigation starts as empty UL that will be populated with JS -->
-      
-      
 
-      <ul id="navbar__list">
-        <!-- <li>Showcase</li> -->
-        <!-- <li>How We Do It</li> -->
-        <!-- <li>Our Projects</li> -->
-        <!-- <li>Testimonials</li> -->
-        <!-- <li>Subscribe</li> -->
+    <header class="page__header" id="page_header">
+      <div id="logo">PinkPink<span class="logo-dot">.</span></div>
 
-      </ul>
-    </nav>
+      <button id="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
 
-    <button id="hamburger">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </button>
-    
-   </header>
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
 
-
-  <main>
-    <header class="showcase">
-    
-      <img class="decor" src="img/pic 1.avif" alt="home decor">
-
-      <div class="decor-description">
-        <h4 class="introh4">Quality And Design For All.</h4>
-        <h3 class="intro">We Create Spaces, Build Dreams, Shape Enviornments<span class='logo-dot'>.</span></h3>
-        <p>Lorem ipsum dolor 
-        sit amet consectetur, adipisicing elit. Explicabo
-         ipsa tenetur quibusdam repellendus libero officiis 
-         quo,rcitationem rerum at, perspiciatis velit.
-        </p>
-        <br>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Quod, officiis quia est recusandae aperiam sunt iste non
-        </p>
-      </div>
+        <ul id="navbar__list">
+          <!-- <li>Showcase</li> -->
+          <!-- <li>How We Do It</li> -->
+          <!-- <li>Our Projects</li> -->
+          <!-- <li>Testimonials</li> -->
+          <!-- <li>Subscribe</li> -->
+        </ul>
+      </nav>
     </header>
 
+    <main>
+      <header class="showcase">
+        <img class="decor" src="img/pic 1.avif" alt="home decor" />
 
-    <!-- Each Section has an ID (used for the anchor) and 
+        <div class="decor-description">
+          <h4 class="introh4">Quality And Design For All.</h4>
+          <h3 class="intro">
+            We Create Spaces, Build Dreams, Shape Enviornments<span
+              class="logo-dot"
+              >.</span
+            >
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            ipsa tenetur quibusdam repellendus libero officiis quo,rcitationem
+            rerum at, perspiciatis velit.
+          </p>
+          <br />
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
+            officiis quia est recusandae aperiam sunt iste non
+          </p>
+        </div>
+      </header>
+
+      <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="section1">
+      <section id="section1" data-nav="section1">
+        <!-- <h2>Our Showcase</> -->
 
-      <!-- <h2>Our Showcase</> -->
+        <div class="gallery">
+          <img src="img/show.jpg" alt="home decor" />
 
-      <div class="gallery">
+          <img src="img/section1.jpg" alt="home decor" />
+        </div>
 
-      <img src="img/show.jpg" alt="home decor">
-  
-      <img src="img/section1.jpg" alt="home decor">
-    
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti.
+          Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+          Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin
+          mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur,
+          sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque
+          maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis,
+          aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc,
+          pharetra et elementum non, faucibus vitae elit. Integer nec libero
+          venenatis libero ultricies molestie semper in tellus. Sed congue et
+          odio sed euismod.
+        </p>
 
-      </div>
+        <p>
+          Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
+          gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras
+          eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
+          consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget
+          elementum tortor mollis non.
+        </p>
+      </section>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-      <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      
-    </section>
-
-
-    <section id="section2" data-nav="section-2">
-    
+      <section id="section2" data-nav="section-2">
         <!-- <h2>How We Do It</h2> -->
-        
-        <div class="container_list">
-          
-          <ol>
 
+        <div class="container_list">
+          <ol>
             <div class="box1">
               <li class="numbers">01.</li>
-              <h3 class="title-list">Dicuss the concept with us<span class='logo-dot'>.</span></h3>
-              <p class="p-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam .</p>
+              <h3 class="title-list">
+                Dicuss the concept with us<span class="logo-dot">.</span>
+              </h3>
+              <p class="p-list">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                .
+              </p>
               <a class="learn" href="#">Learn More</a>
             </div>
 
             <div class="box2">
               <li class="numbers">02.</li>
-              <h3 class="title-list">Confirm the design<span class='logo-dot'>.</span></h3>
-              <p class="p-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam </p>
+              <h3 class="title-list">
+                Confirm the design<span class="logo-dot">.</span>
+              </h3>
+              <p class="p-list">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              </p>
               <a class="learn" href="#">Learn More</a>
             </div>
 
             <div class="box3">
-              <li class='numbers'>03.</li>
-              <h3 class="title-list">We Design and Accessorize<span class='logo-dot'>.</span></h3>
-              <p class="p-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam </p>
-              <a class='learn' href="#">Learn More</a>
+              <li class="numbers">03.</li>
+              <h3 class="title-list">
+                We Design and Accessorize<span class="logo-dot">.</span>
+              </h3>
+              <p class="p-list">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              </p>
+              <a class="learn" href="#">Learn More</a>
             </div>
-            
           </ol>
-
         </div>
-    </section>
+      </section>
 
-
-    <section id="section3" data-nav="Section-3">
-      
+      <section id="section3" data-nav="Section-3">
         <!-- <h2>Our Projects</h2> -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti.
+          Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+          Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin
+          mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur,
+          sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque
+          maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis,
+          aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc,
+          pharetra et elementum non, faucibus vitae elit. Integer nec libero
+          venenatis libero ultricies molestie semper in tellus. Sed congue et
+          odio sed euismod.
+        </p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      
-    </section>
+        <p>
+          Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
+          gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras
+          eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
+          consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget
+          elementum tortor mollis non.
+        </p>
+      </section>
 
+      <section id="section4" data-nav="Section-4">
+        <!-- <h2>Testimonials</h2> -->
+        <div class="test_container">
+          <div class="author_container">
+            <img class="author" src="img/picture1.jpg" alt="author" />
+            <figcaption>Anna - New York</figcaption>
+          </div>
 
-    <section id="section4" data-nav="Section-4">
-      
-      <!-- <h2>Testimonials</h2> -->
-      <div class="test_container">
-
-      <div class="author_container">
-        
-        <img class='author' src="img/picture1.jpg" alt="author">
-        <figcaption>Anna - New York</figcaption>
-        
-      </div>
-
-      <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        <br>
-        Morbi fermentum metus faucibus lectus pharetra dapibus."
-      </blockquote>
-
-      </div>
-
-      <div class="test_container">
-
-        <div class="author_container">
-          
-          <img class='author' src="img/picture1.jpg" alt="author">
-          <figcaption>Megan- Miami</figcaption>
-          
-        </div>
-  
-        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          <br>
-          Morbi fermentum metus faucibus lectus pharetra dapibus."
-        </blockquote>
-  
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Morbi fermentum metus faucibus lectus pharetra dapibus."
+          </blockquote>
         </div>
 
         <div class="test_container">
-
           <div class="author_container">
-            
-            <img class='author' src="img/picture1.jpg" alt="author">
-            <figcaption>Jo - Alabama</figcaption>
-            
+            <img class="author" src="img/picture4.jpg" alt="author" />
+            <figcaption>Megan- Miami</figcaption>
           </div>
-    
-          <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            <br>
+
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
             Morbi fermentum metus faucibus lectus pharetra dapibus."
           </blockquote>
-    
+        </div>
+
+        <div class="test_container">
+          <div class="author_container">
+            <img class="author" src="img/picture2.jpg" alt="author" />
+            <figcaption>Jo - Alabama</figcaption>
           </div>
 
-      
-      
-  </section>
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Morbi fermentum metus faucibus lectus pharetra dapibus."
+          </blockquote>
+        </div>
+      </section>
 
- <section id="section5" data-nav="Section-5">
-      
-  <form  method="post" enctype="application/x-www-form-urlencoded">
-    <h3 class="subscribe">Subscribe Below</h3>
-    <fieldset>
-      <br>
-      <label for="User-Name">Name</label>
-      <br>
-      <input type="text" required minlength="2" id="User-Name" name="User-Name">
-      <br>
-      <label for="User-Email">Email</label>
-      <br>
-      <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="User-Email" name="User-Name">
-      <br>
-      <br>
-      <button class="send_button" type="submit" class="submit" >Submit</button>
-    </fieldset>
-    
+      <section id="section5" data-nav="Section-5">
+        <form method="post" enctype="application/x-www-form-urlencoded">
+          <h3 class="subscribe">Subscribe Below</h3>
+          <fieldset>
+            <br />
+            <label for="User-Name">Name</label>
+            <br />
+            <input
+              type="text"
+              required
+              minlength="2"
+              id="User-Name"
+              name="User-Name"
+            />
+            <br />
+            <label for="User-Email">Email</label>
+            <br />
+            <input
+              type="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              id="User-Email"
+              name="User-Name"
+            />
+            <br />
+            <br />
+            <button class="send_button" type="submit" class="submit">
+              Submit
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
 
-  </form>
-      
-    </section>
+    <button class="floating-button"><a href="#section1">&uarr;</a></button>
 
-  </main>
-
-  <button class="floating-button"><a href='#section1'>&uarr;</a></button>
-
-  <footer class="page__footer">
-    <p>&copy Udacity</p>
-  </footer>
-  <script src="js/app.js"></script>
-</body>
-
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+    <script src="js/mobileNav.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
