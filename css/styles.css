@@ -386,6 +386,10 @@ footer {
     place-content: center;
   }
 
+  h2 {
+    text-align: center;
+  }
+
   .showcase {
     display: flex;
     flex-wrap: wrap;
