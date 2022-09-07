@@ -157,6 +157,8 @@ subLink();
 
 //event listener for anchor (link)
 
+//SMOOTH BEHAVIOUR
+
 document.querySelectorAll(".navbar__menu a").forEach((a) => {
   a.addEventListener("click", (event) => {
     event.preventDefault();
@@ -246,8 +248,6 @@ addEventListener("scroll", () => {
 });
 
 //mobile navigation
-
-// module.exports = mobileNav;
 
 const hambIcon = document.querySelector("#hamburger");
 const list = mobileList;

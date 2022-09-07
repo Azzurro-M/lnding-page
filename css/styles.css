@@ -489,6 +489,8 @@ footer {
   .page__header {
     display: grid;
     grid-template-areas: "logon hamburger" "nav .";
+    background-color: white;
+    height: 100px;
   }
 
   .showNav {
@@ -523,7 +525,7 @@ footer {
     position: relative;
     right: 130px;
     top: 15px;
-    background-color: white;
+    background-color: transparent;
     border: none;
     cursor: pointer;
   }
