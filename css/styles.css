@@ -10,7 +10,6 @@ body {
   background-color: white;
   font-family: "source sans Pro";
   font-size: 20px;
-  width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -333,11 +332,22 @@ a:hover {
   cursor: pointer;
 }
 
-.active a {
-  background-color: rgb(173, 68, 85);
+.active h2 {
+  background-color: rgb(217, 193, 197);
   font-weight: 660;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 20px;
+}
+
+section.active {
+  background-color: rgb(249, 243, 244);
+  border-radius: 10px;
+}
+
+header h2 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 6px;
 }
 
 /* floating button */
@@ -387,12 +397,16 @@ footer {
 
 @media screen and (max-width: 600px) {
   body {
-    width: 600px;
     place-content: center;
   }
 
-  h2 {
-    text-align: center;
+  #navbar__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 0;
+    cursor: pointer;
+    background-color: white;
   }
 
   .showcase {
@@ -488,10 +502,15 @@ footer {
   }
 
   #logo {
-    margin-left: 20%;
+    margin-left: 25%;
+    height: 83px;
+    line-height: 83px;
   }
   .navbar__menu {
     visibility: hidden;
+    position: fixed;
+    top: 80px;
+    right: 100px;
   }
 
   .navmenu-active {
