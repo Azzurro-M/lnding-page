@@ -322,7 +322,6 @@ a:hover {
 .active h2 {
   background-color: rgb(217, 193, 197);
   font-weight: 660;
-  /* padding: 10px; */
   border-radius: 20px;
 }
 
@@ -442,15 +441,15 @@ footer {
     width: 100%;
   }
 
-  ol {
-    text-align: center;
-  }
-
   /* SECTION 2 HOW WE DO IT */
 
+  ol {
+    text-align: center;
+    list-style-position: inside;
+    margin-left: 20px;
+  }
+
   .container_list {
-    place-content: center;
-    justify-content: center;
   }
 
   .box1,
@@ -475,6 +474,12 @@ footer {
     font-size: 15px;
     width: 100%;
     text-align: center;
+    margin-left: 50px;
+  }
+
+  .numbers {
+    padding-left: 50px;
+    font-size: 30px;
   }
 
   /* SECTION 3 TESTIMONIAL */

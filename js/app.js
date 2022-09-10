@@ -1,16 +1,3 @@
-// //SMOOTH BEHAVIOUR
-
-// document.querySelectorAll(".navbar__menu a").forEach((a) => {
-//   a.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     const id = a.getAttribute("href");
-//     const section = document.querySelector(id);
-//     section.scrollIntoView({
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 // ADDING NAV + SECTION TITLE + CONNECTING NAV TO SESSIONS AND SMOOTH BEHAVIOUR
 
 const sections = document.querySelectorAll("section");
@@ -73,14 +60,6 @@ addEventListener("scroll", () => {
     }
   });
 });
-
-// navLi.forEach((li) => {
-//   li.classList.remove("active");
-//   if () {
-//     li.classList.add("active");
-//   }
-
-// });
 
 //mobile navigation
 
